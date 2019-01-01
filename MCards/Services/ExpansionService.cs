@@ -67,12 +67,12 @@ namespace MCards.Services
             if (expansionDto.ExpansionName != expansion.ExpansionName)
             {
                 // expansion has changed so check if the new expansion name is already created
-                if (_context.Expansion.Any(x => x.ExpansionName == expansion.ExpansionName))
+                if (_context.Expansion.Any(x => x.ExpansionName == expansionDto.ExpansionName))
                     throw new AppException("Expansion \"" + expansion.ExpansionName + "\" is already created");
 
             }
 
-            // update user properties
+            // update expansion properties
             expansion.ExpansionName = expansionDto.ExpansionName;
             expansion.ExpansionShortName = expansionDto.ExpansionShortName;
             expansion.ExpansionCards = expansionDto.ExpansionCards;

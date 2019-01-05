@@ -82,6 +82,7 @@ namespace MCards
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IExpansionService, ExpansionService>();
             services.AddScoped<ICardTypeService, CardTypeService>();
+            services.AddScoped<ICardService, CardService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

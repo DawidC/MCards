@@ -14,6 +14,8 @@ namespace MCards.Helpers
         public DbSet<User> Users { get; set; }
         public DbSet<Expansion> Expansion { get; set; }
         public DbSet<CardType> CardType { get; set; }
+        public DbSet<Card> Card { get; set; }
+
 
     }
 }

@@ -1,0 +1,1 @@
+Application reads XLSX file with specific format (edition symbol, card evidence number) and produces output file with all other fields, like card name, mana cost, CURRENT market price, is legal in standard format and other required at the moment information.
